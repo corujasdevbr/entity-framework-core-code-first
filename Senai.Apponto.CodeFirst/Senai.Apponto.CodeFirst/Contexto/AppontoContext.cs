@@ -11,7 +11,7 @@ namespace Senai.Apponto.CodeFirst.Contexto
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS3TT; initial catalog=apponto;user id=sa;password=sa132");
+            optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS; initial catalog=apponto;integrated security=true");
             base.OnConfiguring(optionsBuilder);
         }
 
